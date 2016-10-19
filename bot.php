@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.black-ribbon {
+		  	position: fixed;
+		  	z-index: 9999;
+		  	width: 70px;
+		}
+		@media only all and (min-width: 768px) {
+  			.black-ribbon {
+    			width: auto;
+  			}
+		}
+		.stick-left { left: 0; }
+		.stick-right { right: 0; }
+		.stick-top { top: 0; }
+		.stick-bottom { bottom: 0; }
+	</style>
+</head>
+<body>
+
+<!-- Bottom Left -->
+<img src="images/black_ribbon_bottom_left.png" class="black-ribbon stick-bottom stick-left"/>
+
+</body>
+</html>
+
 <?php
 $access_token = 'ZRkfUwSeA73UqLf8DYvAzBE9sr32ILmx0DCy+7O7e/LKyvIXxCs8qkljoAW0MIR0UWPFgCiEb+sWjafTOJztfVli9FBq20QTOpfDP2gDEeR76id+4Zg3LYn8om2A5pIULkia9CrYiUMZXGMjUCGF7gdB04t89/1O/w1cDnyilFU=';
 
@@ -45,3 +75,5 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
+
+?>
